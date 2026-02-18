@@ -1,5 +1,5 @@
 FROM ryoishin/asterix:debian
-RUN apt-get update && apt-get upgrade -y
+
 RUN apt-get install -y ffmpeg git
 RUN pip install -r https://raw.githubusercontent.com/TeamAsterix/AsterixUB/master/requirements.txt
 COPY . .
